@@ -1,4 +1,4 @@
-export default function AccortionBody(languages) {
+export default function AccortionBody({languages}) {
 
   return (
     <div className="col">
