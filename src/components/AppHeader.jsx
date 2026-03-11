@@ -3,7 +3,9 @@ export default function AppHeader() {
   return (
 
     <header>
-      <h1 className="">Learn Web Development</h1>
+      <div className="container-fluid">
+        <h1 className="my-5">Learn Web Development</h1>
+      </div>
     </header>
 
   )
