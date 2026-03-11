@@ -1,4 +1,10 @@
-const languages = [
+import AppHeader from './components/AppHeader.jsx'
+import AppMain from './components/AppMain.jsx'
+import AppFooter from './components/AppFooter.jsx'
+
+function App() {
+
+  const languages = [
   {
     id: 1,
     title: "HTML",
@@ -31,11 +37,11 @@ const languages = [
   }
 ];
 
-function App() {
-
   return (
     <>
-      <h1>prova</h1>
+      <AppHeader />
+      <AppMain languages={languages} />
+      <AppFooter />
     </>
   )
 }
