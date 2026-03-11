@@ -12,7 +12,7 @@ export default function AppMain({ languages }) {
           {
             languages.map(({ id, title }) => (
               <div className="card-header my-5" key={id}>
-                <button onClick={() => setCount(id)} type="btn" className="btn btn-primary">
+                <button onClick={() => setCount(id)} type="btn" className={`btn ${count === id ? 'btn-warning' : 'btn-primary'}`}>
                   {title}
                 </button>
               </div>
